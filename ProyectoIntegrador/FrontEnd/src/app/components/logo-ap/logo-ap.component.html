@@ -6,7 +6,8 @@
         <div class="redes">
             <a href=""><img src="../../../assets/github.png" id="github"></a>
             <a href=""><img src="../../../assets/facebook.png" id="facebook"></a>
-            <button type="button" class="btn btn-outline-light">INGRESO</button>
+            <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESO</button>
+            <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESIÓN</button>
         </div>
     </div>
 </div>
