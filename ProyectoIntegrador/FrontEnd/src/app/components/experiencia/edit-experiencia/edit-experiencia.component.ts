@@ -8,8 +8,8 @@ import { SExperienciaService } from 'src/app/service/s-experiencia.service';
   templateUrl: './edit-experiencia.component.html',
   styleUrls: ['./edit-experiencia.component.css']
 })
-export class EditExperienciaComponent implements OnInit{
-  expLab : Experiencia = null;
+export class EditExperienciaComponent implements OnInit {
+  expLab: Experiencia = null;
 
   constructor(private sExperiencia: SExperienciaService, private activatedRouter: ActivatedRoute,
     private router: Router) { }
@@ -32,9 +32,10 @@ export class EditExperienciaComponent implements OnInit{
       data => {
         this.router.navigate(['']);
       }, err =>{
-        alert("Error al modificar experiencia");
-        this.router.navigate(['']);
+         alert("Error al modificar experiencia");
+         this.router.navigate(['']);
       }
     )
   }
+
 }
