@@ -1,4 +1,5 @@
 export const environment = {
     production: true,
-    URL: 'https://frontendscheffer.web.app/',
+    URL: 'http://localhost:4200'
+    //URL: 'https://frontendscheffer.web.app/'
 };
